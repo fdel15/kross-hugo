@@ -119,7 +119,7 @@ h6,
 
 .btn-primary {
   background: var(--primary-color);
-  color: #fff
+  color: var(--primary-accent-color)
 }
 
 .btn-primary.active {
@@ -158,7 +158,7 @@ body {
 
 ::selection {
   background: var(--primary-color);
-  color: #fff
+  color: var(--primary-accent-color)
 }
 
 .preloader {
@@ -265,6 +265,10 @@ a:hover {
 
 .text-primary {
   color: var(--primary-color) !important
+}
+
+.text-primary-accent {
+  color: var(--primary-accent-color) !important
 }
 
 .text-color {
@@ -455,7 +459,11 @@ textarea.form-control {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color: var(--primary-accent-color);
+}
+
+.nav-link:hover {
+  color: var(--nav-link-hover-color) !important;
 }
 
 .hero-area {
