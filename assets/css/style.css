@@ -12,6 +12,10 @@ VERSION: Versoin Number
   font-display: swap
 }
 
+.max-height-1000 {
+  max-height: 1000px;
+}
+
 body {
   line-height: 1.2;
   font-family: roboto, sans-serif;
