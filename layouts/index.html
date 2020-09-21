@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="layer-bg w-100">
-      <img class="img-fluid w-100 max-height-1000" src="{{`images/blocks.png` | relURL}}" alt="bg-shape">
+      <img class="img-fluid w-100 max-height-1000" src="{{`images/bunny-kiss.png` | relURL}}" alt="bg-shape">
     </div>
     <div class="layer" id="l2">
       <!-- <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape"> -->
@@ -107,7 +107,7 @@
         </div>
         {{ range .item }}
         <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
+          <img src="{{.logo | relURL }}" alt="icon" class='logo'>
           <p class="mb-0">{{.duration}}</p>
           <h4>{{.title }}</h4>
           <h6 class="text-light">{{.company }}</h6>
