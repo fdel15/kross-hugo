@@ -17,24 +17,14 @@
 </section>
 <!-- /page title -->
 
+
 <!-- about -->
-<section class="section pt-5">
+<section class="section pt-5 about-content">
   <div class="container">
+    <h1 class='text-primary-accent font-tertiary'>About Nathena</h1>
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-sm-10 offset-md-1">
         {{ .Content }}
-      </div>
-      <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
-          {{ if .Params.author_image }}
-          <img src="{{.Params.author_image | absURL }}" alt="author"
-            class="img-fluid w-100 rounded-lg border-thick border-white">
-          {{ end }}
-        </div>
-        {{ if .Params.author_signature }}
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
-        {{ end }}
-        <!-- <h4>{{ site.Params.Author }}</h4> -->
       </div>
     </div>
   </div>
