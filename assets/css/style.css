@@ -12,8 +12,8 @@ VERSION: Versoin Number
   font-display: swap
 }
 
-.max-height-1000 {
-  max-height: 1000px;
+.max-height-450 {
+  max-height: 450px;
 }
 
 body {
@@ -468,11 +468,6 @@ textarea.form-control {
 
 .nav-link:hover {
   color: var(--nav-link-hover-color) !important;
-}
-
-.hero-area {
-  padding: 250px 0 200px;
-  position: relative
 }
 
 @media(max-width:767px) {
@@ -930,16 +925,29 @@ blockquote {
   background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
+.navbar .nav-item.active .nav-link {
+  color: var(--primary-accent-color) !important;
+}
+
+#logo {
+  width: 100%;
+}
+
 /* HOME */
 
 .hero-area {
-  padding: 100px 0 50px;
+  display: inline-block;
+  padding: 0px 0 50px !important;
+}
+
+.hero-area div {
+  display: inline-block;
 }
 
 /* ABOUT */
 
 .page-title-alt {
-  padding: 165px 0 0
+  padding: 0;
 }
 
 .nathena-about-img {
@@ -963,12 +971,8 @@ blockquote {
 
 /* MY BOOKS */
 
-.page-title {
+.books-portfolio {
   padding: 20px;
-}
-
-.single-page-title {
-  padding-top: 150px;
 }
 
 .buy-button {
@@ -980,8 +984,17 @@ blockquote {
   color: white;
 }
 
-#logo {
-  width: 80%;
+.book-buttons a {
+  width: 100%;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* SINGLE BOOK */
+
+.book-single {
+  margin-top: -25px;
+  padding: 0px;
 }
 
 /* FOOTER  */
